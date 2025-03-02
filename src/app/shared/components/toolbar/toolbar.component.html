@@ -1,0 +1,19 @@
+<div class="toolbar">
+  <div class="content__left">
+    <button class="toggle" (click)="onToggle()">
+      <i class="toggle__icon fa-solid fa-bars"></i>
+    </button>
+    <div class="brand">
+      <span>{{ appName }}</span>
+    </div>
+  </div>
+  <div class="content__right">
+    <div class="session-data">
+      <span class="session-data__name">{{ userName }}</span>
+      <a class="session-data__logout" (click)="onSignOut()">{{ exitAppLabel }}</a>
+    </div>
+    <div class="avatar">
+      {{ userInitials }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+.toolbar {
+  width: 100%;
+  margin-left: 265px;
+  z-index: 1;
+  transition: all .5s ease;
+  background-color: var(--toolbar-bg-color);
+  border-bottom: 1px solid var(--toolbar-bb-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  max-height: 60px;
+
+  .content {
+    &__left {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 14px;
+
+      .toggle {
+        border: none;
+        background-color: var(--toolbar-btn-bg-color);
+        border-radius: 4px;
+        height: 35px;
+        width: 35px;
+
+        &:hover {
+          background-color: var(--toolbar-btn-hover-bg-color);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: var(--toolbar-btn-active-bg-color);
+          cursor: pointer;
+        }
+
+        &__icon {
+          font-size: 16px;
+          color: var(--toolbar-btn-icon-color);
+        }
+      }
+
+      .brand {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--toolbar-brand-color);
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .session-data {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+
+        &__name {
+          font-weight: bold;
+          color: var(--toolbar-sd-name-color);
+        }
+
+        &__logout {
+          font-size: 14px;
+          color: var(--toolbar-sd-logout-color);
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .avatar {
+        border-radius: 50%;
+        background-color: var(--toolbar-avatar-bg-color);
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        color: var(--toolbar-avatar-color);
+      }
+    }
+  }
+}
