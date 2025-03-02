@@ -17,3 +17,18 @@ body {
   background-color: var(--body-bg-color);
   color: var(--body-text-color);
 }
+
+:root {
+  // toolbar
+  --toolbar-bg-color: #E5E7E8;
+  --toolbar-bb-color: #CCCCCC;
+  --toolbar-btn-bg-color: #E5E7E8;
+  --toolbar-btn-hover-bg-color: #D2D4D5;
+  --toolbar-btn-active-bg-color: #C5C7C8;
+  --toolbar-btn-icon-color: #000000;
+  --toolbar-brand-color: #000000;
+  --toolbar-sd-name-color: #000000;
+  --toolbar-sd-logout-color: #005CBB;
+  --toolbar-avatar-bg-color: #005CBB;
+  --toolbar-avatar-color: #FFFFFF;
+}
