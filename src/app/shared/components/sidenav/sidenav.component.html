@@ -1,0 +1,10 @@
+<div class="sidenav" [ngClass]="isOpen ? 'sidenav-opened' : 'sidenav-closed'" [style.top.px]="top ? top : 0">
+  <ul class="sidenav__list">
+    <li class="item" *ngFor="let item of appNavigation">
+      <a class="item__link" (click)="onRoute(item)" [routerLink]="[item.route]" routerLinkActive="active">
+        <i class="item__link__icon" [class]="item.icon"></i>
+        <span class="item__link__label" *ngIf="isOpen">{{ item.label }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

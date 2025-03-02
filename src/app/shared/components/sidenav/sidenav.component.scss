@@ -1,0 +1,79 @@
+.sidenav {
+  background-color: var(--sidenav-bg-color);
+  transition: all .5s ease;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  height: 100%;
+
+  &__list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 60px);
+    cursor: pointer;
+    overflow: hidden auto;
+    gap: 5px;
+
+    .item {
+      width: 100%;
+      font-size: 14px;
+
+      &__link {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        height: 35px;
+        color: var(--sidenav-link-color);
+        text-decoration: none;
+        border-radius: 4px;
+
+        &__icon {
+          font-size: 15px;
+          width: 35px;
+          min-width: 35px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .item:hover {
+      .item__link {
+        background-color: var(--sidenav-link-hover-bg-color);
+        color: var(--sidenav-link-hover-color);
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--sidenav-scrollbar-bg-color);
+      border-radius: 4px;
+    }
+  }
+}
+
+.sidenav-opened {
+  width: 265px;
+}
+
+.sidenav-closed {
+  width: 55px;
+}
+
+.active {
+  background-color: var(--sidenav-item-active-bg-color);
+
+  .item__link__icon,
+  .item__link__label {
+    color: var(--sidenav-item-active-color);
+  }
+}
