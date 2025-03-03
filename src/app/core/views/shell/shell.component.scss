@@ -1,0 +1,20 @@
+.content {
+  width: calc(100% - 265px);
+  margin-left: 265px;
+  z-index: 0;
+  position: relative;
+  top: 60px;
+  transition: all .5s ease;
+  background-color: var(--body-bg-color);
+  padding: 25px;
+}
+
+.content-shrinked {
+  width: calc(100% - 265px);
+  margin-left: 265px;
+}
+
+.content-expanded {
+  width: calc(100% - 55px);
+  margin-left: 55px;
+}

@@ -1,0 +1,19 @@
+<app-toolbar
+  [appName]="presenter.appName"
+  [userName]="presenter.appUser.name"
+  [userInitials]="presenter.appUser.initials"
+  [exitAppLabel]="presenter.exitAppLabel"
+  (signOutEmitter)="presenter.listenSignOutEmitter()"
+  (toggleEmitter)="presenter.listenToggleEmitter($event)">
+</app-toolbar>
+<app-sidenav
+  [top]="presenter.top"
+  [isOpen]="presenter.isSidenavOpen"
+  [appNavigation]="presenter.appNavigation"
+  (itemEmitter)="presenter.listenItemEmitter($event)">
+</app-sidenav>
+<main
+  class="content"
+  [ngClass]="presenter.isSidenavOpen ? 'content-shrinked' : 'content-expanded'">
+  <router-outlet />
+</main>
