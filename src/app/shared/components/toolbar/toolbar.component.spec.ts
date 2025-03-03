@@ -3,7 +3,7 @@ import { ToolbarComponent } from './toolbar.component';
 describe('@ToolbarComponent', () => {
   let component: ToolbarComponent;
 
-  beforeEach(async () => {
+  beforeEach(() => {
     component = new ToolbarComponent();
   });
 
