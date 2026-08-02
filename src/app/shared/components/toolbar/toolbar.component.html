@@ -1,0 +1,13 @@
+<mat-toolbar class="toolbar">
+  <button matIconButton aria-label="icon-button toggle icon" (click)="onToggleButton()">
+    <mat-icon>{{ toggleIcon() }}</mat-icon>
+  </button>
+  <h1 class="toolbar__app-name">{{ appName() }}</h1>
+  <span class="toolbar__spacer"></span>
+  <button matIconButton aria-label="icon-button first action icon" (click)="onFirstAction()">
+    <mat-icon>{{ firstActionIcon() }}</mat-icon>
+  </button>
+  <button matIconButton aria-label="icon-button second action icon" (click)="onSecondAction()">
+    <mat-icon>{{ secondActionIcon() }}</mat-icon>
+  </button>
+</mat-toolbar>
